@@ -1,0 +1,86 @@
+:root {
+  /* 색상 팔레트 */
+  --color-bg-app: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-bg-subtle: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-border-hover: #cbd5e1;
+  --color-border-focus: #2563eb;
+
+  /* 텍스트 색상 (WCAG AA 4.5:1 이상 충족) */
+  --color-text-main: #0f172a;       /* slate-900 (대비 15.5:1 on #fff) */
+  --color-text-muted: #334155;      /* slate-700 (대비 8.9:1 on #fff) */
+  --color-text-subtle: #475569;     /* slate-600 (대비 5.8:1 on #fff) */
+  --color-text-inverted: #ffffff;
+
+  /* 브랜드 및 상태 색상 */
+  --color-primary: #2563eb;         /* blue-600 */
+  --color-primary-hover: #1d4ed8;   /* blue-700 */
+  --color-primary-subtle: #eff6ff;  /* blue-50 */
+  --color-primary-border: #bfdbfe;  /* blue-200 */
+  
+  --color-success: #15803d;         /* green-700 (높은 가독성) */
+  --color-success-subtle: #f0fdf4;  /* green-50 */
+  --color-success-border: #bbf7d0;  /* green-200 */
+
+  --color-danger: #b91c1c;          /* red-700 */
+  --color-danger-hover: #991b1b;    /* red-800 */
+  --color-danger-subtle: #fef2f2;   /* red-50 */
+  --color-danger-border: #fecaca;   /* red-200 */
+
+  --color-warning: #b45309;         /* amber-700 */
+  --color-warning-subtle: #fffbeb;  /* amber-50 */
+
+  /* 타이포그래피 */
+  --font-family: -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, "Segoe UI", Roboto, sans-serif;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+
+  /* 간격 */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+
+  /* 둥글기 */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* 그림자 */
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.08);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+
+  /* 전환 효과 */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* 터치 및 조작 영역 최소치 */
+  --min-touch-target: 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
